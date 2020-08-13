@@ -1,0 +1,62 @@
+#firstName{
+  float: left;
+  width: 15%;
+  font-size: 20px;
+}
+#lastName{
+  float: left;
+  width: 15%;
+  font-size: 18px;
+}
+#born{
+  float: left;
+  font-size: 16px;
+
+}
+#deceased{
+  float: left;
+  font-size: 16px;
+}
+.dictators {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  /*width: 15em;*/
+}
+.dictators li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 2em;
+  border-radius: 4px;
+}
+.dictators li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.dictators li.selected {
+  background-color: #CFD8DC;
+  color: white;
+}
+.dictators li.selected:hover {
+  background-color: #BBD8DC;
+  color: white;
+}
+.dictators .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
