@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DictatorsComponent } from './dictators/dictators.component';
 import { DictatorDetailComponent } from './dictator-detail/dictator-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DictatorsComponent,
-    DictatorDetailComponent
+    DictatorDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
