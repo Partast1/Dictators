@@ -3,7 +3,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Dictator } from '../Dictator';
 import {DictatorService} from '../dictator.service';
 import { MessageService } from '../message.service';
-import {DICS} from '../mock-dictator';
 import {DictatorDetailComponent} from '../dictator-detail/dictator-detail.component';
 
 @Component({
@@ -20,7 +19,6 @@ export class DictatorsComponent implements OnInit {
   dic: Dictator;
   dictators: Dictator[];
   dicList: Array<Dictator> = [];
-  Dics = DICS;
   selectedDic: Dictator;
   constructor(private dictatorService: DictatorService, private messageService: MessageService) {
   }
