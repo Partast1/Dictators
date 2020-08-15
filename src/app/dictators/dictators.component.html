@@ -1,43 +1,17 @@
 <h2>Dictators</h2>
+<!--<form (submit)="SummitDic()">-->
+<!--  <input>-->
+<input [(ngModel)]="fName" placeholder="Firstname"/>
+<input [(ngModel)]="lName" placeholder="Lastname"/>
+<input [(ngModel)]="yBorn" placeholder="Born"/>
+<input [(ngModel)]="yDeceased" placeholder="Deceased"/>
+<input [(ngModel)]="desciption" placeholder="Description"/>
+<button (click)="submitDic(fName, lName,yBorn,yDeceased,desciption)">get that dic</button>
 
-
-
-<!--<table class="table table-dark">-->
-<!--  <thead>-->
-<!--  <tr>-->
-<!--    <th scope="col">Firstname</th>-->
-<!--    <th scope="col">Lastname</th>-->
-<!--    <th scope="col">Born</th>-->
-<!--    <th scope="col">Deceased</th>-->
-<!--  </tr>-->
-<!--  </thead>-->
-<!--  <tbody>-->
-<!--  <tr>-->
-
-<!--    <th scope="row">1</th>-->
-<!--    <td>{{Dictator.firstName}}</td>-->
-<!--    <td>Otto</td>-->
-<!--    <td>@mdo</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <th scope="row">2</th>-->
-<!--    <td>Jacob</td>-->
-<!--    <td>Thornton</td>-->
-<!--    <td>@fat</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <th scope="row">3</th>-->
-<!--    <td>Larry</td>-->
-<!--    <td>the Bird</td>-->
-<!--    <td>@twitter</td>-->
-<!--  </tr>-->
-<!--  </tbody>-->
-<!--</table>-->
-<!--<input [(ngModel)]="selectedDic.lastName" placeholder="name"/>-->
-
+<!--</form>-->
 <div class="Card-container">
   <ul class="dictators">
-    <li *ngFor=" let Dictator of Dics"
+    <li *ngFor=" let Dictator of dicList"
         [class.selected]="Dictator === selectedDic"
         (click)="onSelect(Dictator)">
       <div id="firstName">
@@ -54,12 +28,8 @@
             Deceased:
             <span class="badge">{{Dictator.deceased}}</span>
           </div>
-<!--        </div>-->
-<!--      </div>-->
-<!--      {{Dictator.description}}-->
+
     </li>
   </ul>
-
-<!--  <app-dictator-detail [dictator]="selectedDic" ]></app-dictator-detail>-->
-
+  <button (click)="deleteDic()">Delete latest dic</button>
 </div>
